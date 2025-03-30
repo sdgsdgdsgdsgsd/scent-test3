@@ -1,1 +1,36 @@
-<!DOCTYPE html>...</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 휴식 취향은?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="start-screen" class="screen active">
+      <h1>나의 휴식 취향은?</h1>
+      <p class="subtitle">당신에게 어울리는 향은 어떤 걸까요?</p>
+      <button id="start-btn">시작하기</button>
+      <p class="participants">현재까지 <span id="count">7,854</span>명이 참여했어요</p>
+    </section>
+
+    <section id="question-screen" class="screen hidden">
+      <div id="question-box">
+        <p id="question-text"></p>
+        <div id="choices" class="choices"></div>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen hidden">
+      <blockquote id="result-quote"></blockquote>
+      <h2 id="result-title"></h2>
+      <p id="result-desc"></p>
+      <img id="result-img" src="" alt="향 이미지" />
+      <a id="result-link" href="#" target="_blank" class="result-button">🌿 내 맞춤 향 추천 상품 구경하기</a>
+      <div class="share-buttons">
+        <button onclick="copyURL()">🔗 링크 복사</button>
+        <button onclick="downloadResultImage()">📸 이미지 저장</button>
+        <button onclick="shareInstagram()">📷 인스타그램 공유</button>
+        <button
