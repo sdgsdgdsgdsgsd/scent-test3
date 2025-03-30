@@ -1,1 +1,27 @@
-body { margin: 0; font-family: 'Nanum Myeongjo', serif; ... }
+body {
+  margin: 0;
+  font-family: 'Nanum Myeongjo', serif;
+  background: #f4f7f5;
+  color: #2f3a34;
+  transition: background 1s ease;
+}
+.woody-theme {
+  background: linear-gradient(to bottom, #d8e3d7, #a0b49e);
+}
+.screen {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+.screen.active {
+  display: block;
+}
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #556b5d;
+  color: white;
+  cursor: pointer;
+  margin: 1rem
