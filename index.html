@@ -16,14 +16,14 @@
       <p class="participants">현재까지 <span id="count">7,854</span>명이 참여했어요</p>
     </section>
 
-    <section id="question-screen" class="screen hidden">
+    <section id="question-screen" class="screen">
       <div id="question-box">
         <p id="question-text"></p>
         <div id="choices" class="choices"></div>
       </div>
     </section>
 
-    <section id="result-screen" class="screen hidden">
+    <section id="result-screen" class="screen">
       <blockquote id="result-quote"></blockquote>
       <h2 id="result-title"></h2>
       <p id="result-desc"></p>
@@ -33,4 +33,13 @@
         <button onclick="copyURL()">🔗 링크 복사</button>
         <button onclick="downloadResultImage()">📸 이미지 저장</button>
         <button onclick="shareInstagram()">📷 인스타그램 공유</button>
-        <button
+        <button onclick="shareTikTok()">🎵 TikTok 공유</button>
+      </div>
+      <button id="retry-btn">🔁 다시하기</button>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
