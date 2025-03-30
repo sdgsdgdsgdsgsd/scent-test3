@@ -1,1 +1,1 @@
-const startBtn = document.getElementById('start-btn'); ... }
+const scentImages = ["wood.jpg", "basil.jpg", "blacktea.jpg"];
